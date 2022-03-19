@@ -1,0 +1,19 @@
+doctype html
+html(lang='en')
+  include head.pug
+  body(class='grid place-items-center h-screen')
+    main(class='w-fit flex flex-col gap-10')
+      header(class='')
+        h1(class="text-5xl font-bold")
+
+        h2(class="text-1xl text-indigo-400")
+          | I am selling this domain name
+      include form.pug
+
+      footer(class='mt-10')
+        | Or contact me at&nbsp;
+        a(class='mailto underline hover:no-underline hover:text-indigo-400' href='mailto:yair.even.or@gamil.com?subject=')
+          | Yair.Even.Or@gamil.com
+
+    include scripts.pug
+    //- <!--include sections.pug-->

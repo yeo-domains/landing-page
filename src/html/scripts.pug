@@ -1,0 +1,13 @@
+script.
+    const domain = location.hostname, // location.search.split(/[=|&]/)[1],
+          h1 = document.querySelector('h1'),
+          mailto = document.querySelector('.mailto'),
+          hiddenInput = document.querySelector('input[type=hidden]');
+
+    if( !domain )
+        document.body.innerHTML = '';
+
+    document.title = domain;
+    h1.innerHTML = domain;
+    mailto.href += domain;
+    hiddenInput.value = domain;

@@ -1,0 +1,45 @@
+{
+    "name": "@yeo-domains/selllands.com",
+    "version": "1.0.0",
+    "homepage": "",
+    "description": "selllands.com",
+    "keywords": [],
+    "license": "MIT",
+    "browserslist": [
+        ">1%",
+        "not dead",
+        "not ie < 11",
+        "not IE_Mob 11",
+        "not op_mini all"
+    ],
+    "scripts": {
+        "start": "concurrently \"npm:build -- -w\" \"npm:css\"",
+        "build": "pug -O src/data/index.js -P src/html/index.pug -o dist",
+        "css": "postcss -o ./dist/styles.css ./src/css/*.css --watch",
+        "clean": "rm -rf dist && npm run makedir",
+        "makedir": "mkdirp dist",
+        "serve": "http-server ./dist -o",
+        "prepublishOnly": "pkg-ok"
+    },
+    "author": {
+        "name": "Yair Even-Or",
+        "email": "vsync.design@gmail.com"
+    },
+    "main": "./index.html",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/yeo-domains/selllands.com.git"
+    },
+    "devDependencies": {
+        "concurrently": "^7.0.0",
+        "cssnano": "^5.1.3",
+        "http-server": "^14.1.0",
+        "mkdirp": "^1.0.4",
+        "postcss": "^8.4.8",
+        "postcss-cli": "^9.1.0",
+        "postcss-import": "^14.0.2",
+        "pug-cli": "*",
+        "rimraf": "^3.0.2",
+        "tailwindcss": "^3.0.23"
+    }
+}

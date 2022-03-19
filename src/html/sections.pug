@@ -1,0 +1,12 @@
+include _cards.pug
+<!--
+mixin section(id, title)
+  section
+    h3(id=`${id}`)
+      a(href=`#${id}`) #{title}
+    block
+
+each item in data
+  +section(item.id, item.title)
+    +cards(item.cards)
+  -->

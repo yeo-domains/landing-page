@@ -1,0 +1,9 @@
+mixin cards(items)
+  if items && items.length
+    ul
+      each item in items
+        +card(item)
+
+mixin card(a)
+  li #{a}
+
