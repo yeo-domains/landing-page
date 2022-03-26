@@ -1,5 +1,5 @@
 script.
-    const domain = location.hostname, // location.search.split(/[=|&]/)[1],
+    const domain = location.hostname.replace('www.',''), // location.search.split(/[=|&]/)[1],
           h1 = document.querySelector('h1'),
           mailto = document.querySelector('.mailto'),
           hiddenInput = document.querySelector('input[type=hidden]');
