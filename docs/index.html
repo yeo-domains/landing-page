@@ -44,11 +44,12 @@
       <footer class="mt-10">Or contact me at&nbsp;<a class="mailto underline hover:no-underline hover:text-indigo-400" href="mailto:yair.even.or@gamil.com?subject=">Yair.Even.Or@gamil.com</a></footer>
     </main>
     <script>
-      const domain = location.hostname.replace('www.',''), // location.search.split(/[=|&]/)[1],
-            h1 = document.querySelector('h1'),
-            mailto = document.querySelector('.mailto'),
-            hiddenInput = document.querySelector('input[type=hidden]');
+      var domain = window.location.search.split('?d=')[1] || location.hostname.replace('www.',''), // location.search.split(/[=|&]/)[1],
+          h1 = document.querySelector('h1'),
+          mailto = document.querySelector('.mailto'),
+          hiddenInput = document.querySelector('input[type=hidden]');
 
+		
       if( !domain )
           document.body.innerHTML = '';
 
