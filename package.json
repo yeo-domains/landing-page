@@ -14,11 +14,9 @@
     ],
     "scripts": {
         "start": "concurrently \"npm:build -- -w\" \"npm:css\"",
-        "build": "pug -O src/data/index.js -P src/html/index.pug -o dist",
-        "css": "postcss -o ./dist/styles.css ./src/css/*.css --watch",
-        "clean": "rm -rf dist && npm run makedir",
-        "makedir": "mkdirp dist",
-        "serve": "http-server ./dist -o",
+        "build": "pug -O src/data/index.js -P src/html/index.pug -o docs",
+        "css": "postcss -o ./docs/styles.css ./src/css/*.css --watch",
+        "serve": "http-server ./docs -o",
         "prepublishOnly": "pkg-ok"
     },
     "author": {
