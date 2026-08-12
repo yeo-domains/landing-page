@@ -127,6 +127,9 @@ Use this if Netlify Domain management shows **Netlify DNS** and asks you to upda
 6. In Netlify → **Domain management → DNS**, confirm records for apex + `www` exist.
 7. HTTPS → **Retry DNS verification** after NS have propagated.
 
+<img width="868" height="517" alt="image" src="https://github.com/user-attachments/assets/d046fa4e-9337-488a-a0ac-ecd2a59cb85d" />
+
+
 **Side effect:** Namecheap **Email Forwarding** / records managed only on Namecheap Advanced DNS may stop working until recreated in Netlify DNS. Plan for that if you use forwarding on `@`.
 
 ---
