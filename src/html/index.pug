@@ -2,13 +2,17 @@ doctype html
 html(lang='en')
   include head.pug
   body(class='grid place-items-center h-screen')
-    main(class='w-fit flex flex-col gap-10')
+    main(class='w-fit flex flex-col gap-6')
       header(class='')
         h1(class="text-5xl font-bold")
 
         h2(class="text-1xl text-indigo-400")
           | Hi, This domain is for sale
-      include form.pug
+
+      section
+        p(class="text-sm font-semibold text-gray-500 mb-2")
+          | Be sure your email is correct so I can reply to you.
+        include form.pug
 
       footer(class='mt-10')
         | Or contact me at&nbsp;
