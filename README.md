@@ -102,6 +102,11 @@ After content changes, commit updated `docs/` so Netlify can deploy without a bu
 
 **Important:** Do **not** mix these. If the UI shows a **“Netlify DNS”** badge, nameservers at the registrar **must** be Netlify’s. If you keep Namecheap BasicDNS / `registrar-servers.com`, use **external DNS** only.
 
+<img width="1611" height="1059" alt="image" src="https://github.com/user-attachments/assets/6ae32485-39ad-49bc-af56-8d583121e1d0" />
+
+<img width="856" height="632" alt="image" src="https://github.com/user-attachments/assets/a1513bce-4609-49ba-910f-c6d22b181787" />
+
+
 ---
 
 ## Part 3 — Namecheap DNS
